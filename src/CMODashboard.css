@@ -1,0 +1,411 @@
+/* CMO DASHBOARD CARD STYLES */
+
+.cmo-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fbfcf7ff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  padding: 24px;
+}
+
+/* CMO Header Section with Login Button */
+.cmo-header-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.cmo-header-icon-box {
+  background-color: #ff6b35;
+  border-radius: 6px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 50px;
+  height: 50px;
+  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
+}
+
+.cmo-header-icon {
+  font-size: 28px;
+  color: white;
+}
+
+.cmo-header-content {
+  flex: 1;
+  padding-top: 2px;
+}
+
+.cmo-title {
+  margin: 0 0 6px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0d4d3a;
+}
+
+.cmo-title-icon {
+  font-size: 28px;
+  margin-right: 10px;
+  color: #ff6b35;
+}
+
+.cmo-subtitle {
+  margin: 2px 0 0 0;
+  font-size: 13px;
+  color: #999;
+  font-weight: 400;
+}
+
+/* Login Button */
+.cmo-login-btn {
+  background-color: #2d5016;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.cmo-login-btn:hover {
+  background-color: #1e3a0f;
+}
+
+.cmo-login-icon {
+  font-size: 18px;
+}
+
+/* Filter Section */
+.cmo-filters-section {
+  margin-bottom: 24px;
+}
+
+.cmo-filter-group {
+  margin-bottom: 20px;
+}
+
+.cmo-filter-label {
+  font-weight: 600;
+  color: #0d4d3a;
+  margin-bottom: 8px;
+  display: block;
+  font-size: 14px;
+}
+
+.cmo-card .card-body {
+  padding: 0;
+}
+
+.cmo-filter-label-required {
+  color: #d32f2f;
+  margin-left: 2px;
+}
+
+.cmo-select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: white;
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  color: #333;
+}
+
+.cmo-select option:disabled {
+  color: #999;
+}
+
+.cmo-select option {
+  color: #333;
+}
+
+.cmo-select:focus {
+  outline: none;
+  border-color: #0d4d3a;
+  box-shadow: 0 0 0 3px rgba(13, 77, 58, 0.1);
+}
+
+.cmo-select:hover {
+  border-color: #bbb;
+}
+
+/* Submit Button */
+.cmo-submit-btn {
+  background-color: #ff6b35;
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.cmo-submit-btn:hover {
+  background-color: #e55a25;
+}
+
+.cmo-submit-btn:active {
+  background-color: #d14d1a;
+}
+
+/* KPI Cards View */
+.cmo-kpi-header {
+  margin-bottom: 20px;
+}
+
+.cmo-reset-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+}
+
+.cmo-selected-info {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+.cmo-reset-btn {
+  background-color: transparent;
+  color: #0d4d3a;
+  border: 1px solid #0d4d3a;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+}
+
+.cmo-reset-btn:hover {
+  background-color: #0d4d3a;
+  color: white;
+}
+
+.cmo-kpi-card {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.cmo-kpi-card.clickable {
+  cursor: pointer;
+}
+
+.cmo-kpi-card.clickable:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.cmo-kpi-header-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 6px;
+  border-left: 4px solid;
+  width: 100%;
+}
+
+.cmo-kpi-header-box i {
+  font-size: 24px;
+}
+
+.cmo-kpi-header-box.teal-border {
+  border-left-color: #0d4d3a;
+  color: #0d4d3a;
+}
+
+.cmo-kpi-header-box.orange-border {
+  border-left-color: #ff6b35;
+  color: #ff6b35;
+}
+
+.cmo-kpi-header-box.blue-border {
+  border-left-color: #1976d2;
+  color: #1976d2;
+}
+
+@media (max-width: 768px) {
+  .cmo-header-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .cmo-title {
+    font-size: 20px;
+  }
+
+  .cmo-login-btn {
+    align-self: flex-end;
+  }
+
+  .cmo-select {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cmo-title {
+    font-size: 18px;
+  }
+
+  .cmo-subtitle {
+    font-size: 12px;
+  }
+
+  .cmo-login-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+/* Dropdown Panel Styles */
+.cmo-dropdown-panel {
+  width: 100%;
+  padding: 25px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  animation: slideDownDropdown 0.2s ease-out;
+  margin-top: 20px;
+}
+
+@keyframes slideDownDropdown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cmo-dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+}
+
+.cmo-metrics-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  width: 100%;
+}
+
+.cmo-metric-box {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+}
+
+.cmo-metric-label {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.cmo-metric-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #003d5c;
+}
+
+.cmo-chart-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.cmo-chart-box {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.cmo-chart-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #003d5c;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cmo-chart-placeholder {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: white;
+  border: 1px dashed #e0e0e0;
+}
+
+.cmo-metrics-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.cmo-section {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.cmo-section-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #003d5c;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 12px;
+}
